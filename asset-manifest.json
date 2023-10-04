@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/reactresume-2/static/css/main.1a6f6ccb.css",
+    "main.js": "/reactresume-2/static/js/main.c0a7acc3.js",
+    "static/js/787.6e5bbd23.chunk.js": "/reactresume-2/static/js/787.6e5bbd23.chunk.js",
+    "static/media/Tiles.png": "/reactresume-2/static/media/Tiles.48ef9a80939929d8d2d2.png",
+    "static/media/Food.png": "/reactresume-2/static/media/Food.5b503f880a3a5e49c4f6.png",
+    "static/media/Mobile.png": "/reactresume-2/static/media/Mobile.f7d206c885e7f69a27eb.png",
+    "static/media/Resume1.png": "/reactresume-2/static/media/Resume1.175d262983a6721c3929.png",
+    "static/media/reactjs-logo.png": "/reactresume-2/static/media/reactjs-logo.20adfb35ae6a6e5817bf.png",
+    "static/media/img2.jpeg": "/reactresume-2/static/media/img2.70d7f95dd77760a35fc6.jpeg",
+    "index.html": "/reactresume-2/index.html",
+    "main.1a6f6ccb.css.map": "/reactresume-2/static/css/main.1a6f6ccb.css.map",
+    "main.c0a7acc3.js.map": "/reactresume-2/static/js/main.c0a7acc3.js.map",
+    "787.6e5bbd23.chunk.js.map": "/reactresume-2/static/js/787.6e5bbd23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a6f6ccb.css",
+    "static/js/main.c0a7acc3.js"
+  ]
+}
