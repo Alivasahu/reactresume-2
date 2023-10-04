@@ -1,0 +1,25 @@
+$mobile-width:"600px";
+$smallScreen-width:"1000px";
+$tableScreen-width:"13000px";
+$text-color:"#887b7b";
+@mixin h2{
+
+    font-size: 2.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+margin-bottom: 40px;
+}
+@mixin mobile{
+    @media (max-width:#{$mobile-width}) {
+        @content
+    }
+};
+@mixin smallScreen{
+    @media (max-width:#{$smallScreen-width}) {
+        @content
+    }
+};
+@mixin tabletScreen{
+    @media (max-width:#{$tableScreen-width}) {
+        @content
+    }
+}

@@ -1,0 +1,86 @@
+@import '../Global.scss';
+.portfolio{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10%;
+    flex-direction: column;
+    text-align: start;
+    h2{
+        @include h2;
+    }
+    .projects{
+        width: 100%;
+        display: grid;
+        min-height: 200px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+        .project-box{
+           width: 100%;
+            &:hover{
+                .project-link{
+                    h3{
+                        border-bottom: 2px solid #fff   ;
+                    }
+                    .project{
+                        ul{
+                            li{
+                                background-color: #333;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+              
+            }
+            .project-link{
+                width: 100%;
+                display: inline-block;
+                h3{
+                    font-size: 1.7rem;
+                    font-weight: 100;
+                   margin: 0 5%;
+                    width: fit-content;
+                    transition: 0.5s ease-in-out all;
+                }
+                .project{
+                    width: 100%;
+                   //  background: url(bg.jpg);
+                     background-color: beige;
+                     box-shadow: 5px 4px 6px -1px rgba(235, 176, 176, 0.75);
+                    // background: url(wallpapersden.com_background-light-bright_2560x1600.jpg);
+                    border-radius: 50px;
+                   display: flex;
+                   justify-content: center;
+                   align-items: flex-end;
+                   position: relative;
+                   margin-bottom: 30px;
+                    ul{
+                        position: absolute;
+                        bottom: 20px;
+                        left: 15%;
+                        li{
+                            display: inline-block;
+                            margin: 5px 10px;
+                            font-size: 0.8rem;
+                            font-weight: 700;
+                            background-color: #fff;
+                            padding:5px 15px;
+                            border-radius: 30px;
+                            color: #333;
+                            transition: 0.5s ease-in-out all;
+                            text-transform: uppercase;
+                        }
+                    }
+                    img{
+                    margin-top: 50px;
+                        width: 80%;
+                      border-radius: 50px 50px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '.././Global.scss';
+.skills{
+    width: 100%;
+    min-height: 600px;
+    padding: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    h2{
+        @include h2;
+    }
+    .skill{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    @include tabletScreen{
+
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include mobile{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+        .box{
+            width: 100%;
+            .inner-box{
+                border: 2px solid #333;
+                padding:50px;
+                margin-bottom: 20px;
+                border-radius: 70px;
+                height: 220px;
+                transition: 0.4s ease-in-out all;
+                width: 100%;
+                &:hover{
+                    border: 2px solid #fff;
+                }
+                img{
+                    margin-bottom: 20px;
+                }
+                h3{
+                    background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            }
+            h4{
+                font-size: 0.9rem;
+                font-weight: 200;
+                letter-spacing: 1px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

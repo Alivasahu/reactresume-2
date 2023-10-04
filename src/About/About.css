@@ -1,0 +1,20 @@
+.about {
+  width: 100%;
+  min-height: 700px;
+  padding: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about h4 {
+  font-size: 0.9rem;
+  text-align: start;
+  font-weight: 400;
+  color: #887b7b;
+}/*# sourceMappingURL=About.css.map */

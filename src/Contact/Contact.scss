@@ -1,0 +1,76 @@
+@import '../Global.scss';
+
+.contact {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10%;
+    flex-direction: column;
+    text-align: start;
+
+    h2 {
+        @include h2;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 100%;
+
+        div {
+            margin: 20px 0;
+
+            label {
+                font-size: 0.8rem;
+            }
+
+            input,
+            textarea {
+                margin-top: 10px;
+                display: block;
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                &::placeholder {
+                    font-size: 0.9rem;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+
+        .attach {
+            position: relative;
+
+            p {
+                width: 100%;
+                height: 100%;
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        button{
+            padding: 10px 25px;
+            border-radius: 30px;
+            background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+            border: 0;
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+    }
+}

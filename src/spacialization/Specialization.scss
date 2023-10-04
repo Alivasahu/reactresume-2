@@ -1,0 +1,42 @@
+@import '.././Global.scss';
+.specialization{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10%;
+    text-align: start;
+    h2{
+     @include h2;
+    }
+    .services{
+        width: 100%;
+        .service{
+            border: 1px solid #333;
+            width: 100%;
+            padding: 40px;
+            margin: 30px 0;
+            transition: all 0.6s ease-in-out;
+            &:hover{
+                border: 1px solid transparent; /* Set the border width and make it transparent */
+                border-image: linear-gradient(to right, #f06, #9f6); /* Define the gradient colors and direction */
+                border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
+                p{
+                    text-decoration: underline;
+                }
+            }
+          
+            h4{
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 0.8rem;
+                color: #{$text-color};
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import './Global.scss';
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2%;
+  background-color:	#202020;
+  gap: 20px;
+  
+  @include smallScreen{
+    flex-direction: column;
+  }
+  .main-page{
+    min-height: 100vh;
+  width: 60%;
+    position: relative;
+   left: 8%;
+   box-sizing: border-box;
+      @include smallScreen{
+    position: static;
+    width: 100%;
+  }
+  }
+  
+}
+
+

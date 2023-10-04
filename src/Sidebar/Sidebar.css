@@ -1,0 +1,74 @@
+.sidebar {
+  border: 1px solid #ede2e2;
+  border-radius: 30px;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 2%;
+  top: 4%;
+  padding: 20px;
+  width: 25%;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+  }
+}
+.sidebar h2 {
+  font-size: 1.5rem;
+}
+.sidebar .image {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.sidebar .image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sidebar .details h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sidebar .details h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sidebar .icons {
+  display: flex;
+  gap: 10px;
+}
+.sidebar .icons .icon-container .icon {
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 15px;
+  border: 1px solid #af9e9e;
+  font-size: 1rem;
+  box-sizing: unset;
+  transition: 1s ease-in-out all;
+}
+.sidebar .icons .icon-container .icon:hover {
+  background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+  overflow: hidden;
+  border: 1px transparent;
+  width: initial;
+  transform: scale(1.2);
+}
+.sidebar button {
+  padding: 15px 30px;
+  width: 80%;
+  background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+  border: none;
+  border-radius: 30px;
+}/*# sourceMappingURL=Sidebar.css.map */

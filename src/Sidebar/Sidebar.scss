@@ -1,0 +1,90 @@
+@import '../Global.scss';
+.sidebar {
+    border: 1px solid #ede2e2;
+    border-radius: 30px;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 2%;
+    top: 4%;
+    padding: 20px;
+    width: 27%;
+    @include smallScreen{
+     position: static;
+     width: 95%;
+      }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .details {
+        h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+        @include tabletScreen{
+             gap: 2px;
+        }
+        .icon-container{
+            
+            .icon {
+                //    background-color: blueviolet;
+                margin: 0 10px;
+                border-radius: 50%;
+                padding: 15px;
+                border: 1px solid #af9e9e;
+                font-size: 1rem;
+                box-sizing: unset;
+                transition: 1s ease-in-out all;
+                &:hover{
+                    background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+                    overflow: hidden;
+                    border: 1px transparent;
+                    width: initial;
+                    transform: scale(1.2);
+                }
+            }
+        } 
+    }
+
+    button {
+        padding: 15px 30px;
+        width: 80%;
+        background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+        border: none;
+        border-radius: 30px;
+    }
+
+
+}

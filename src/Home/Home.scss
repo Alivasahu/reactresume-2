@@ -1,0 +1,72 @@
+@import '../Global.scss';
+.home{
+    width: 100%;
+    min-height:700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start ;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10%;
+position: relative;
+   text-align: start;
+    h1{
+        font-size: 3rem;
+        @include mobile{
+            font-size: 2.5rem;
+        }
+    }
+    h2{
+        font-size: 2rem;
+        @include mobile{
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        font-size: 0.9rem;
+        color: #{$text-color};
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+        animation:circle 2s linear infinite;
+       position: absolute;
+       right: 5%;
+       bottom: 10%;
+       @include mobile{
+        bottom: 5%;
+        right: 10%;
+    }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@keyframes  circle{
+    0%{
+        transform:rotate(60deg)scale(1.1);
+    }
+    50%{
+        transform: rotate(180deg)scale(1);
+    }100%{
+        transform:rotate(360deg)scale(1.1);
+    }
+}
+.title{
+    display: flex;
+    align-items:center ;
+    gap: 15px;
+    border: 1px solid;
+    padding: 4px 15px;
+    border-radius: 30px;
+    margin-bottom: 70px;
+    @include smallScreen{
+        margin-bottom: 40px;
+    }
+    .home-icon,.about-icon,p{
+        font-size: 0.8rem;
+        color: #fff;
+    }
+   
+}

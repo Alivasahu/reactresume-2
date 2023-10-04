@@ -1,0 +1,62 @@
+@import '../Global.scss';
+.experience{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    text-align: left;
+    padding: 10%;
+    h2{
+        @include h2;
+    }
+    ul{
+        width: 100%;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start ;
+            gap: 20px;
+            flex-direction: column;
+            position: relative;
+        border-left: 1px solid #{$text-color};
+        padding-left: 10%;
+        padding-bottom: 8%;
+            &::before{
+                content: " ";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #{$text-color};
+                border-radius: 50%;
+                top: -0%;
+                left: -5px;
+               
+            }
+            &:hover{
+                &::before{
+                    background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+                }
+                h6{
+                    background: linear-gradient(to right, #CE1010 20%, #A71046 100%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            }
+         
+            h6{
+                color: #{$text-color};
+            }
+            h4{
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 0.8rem;
+                
+            }
+        }
+    }
+}

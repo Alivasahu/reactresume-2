@@ -1,0 +1,79 @@
+.home {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10%;
+  position: relative;
+  text-align: start;
+}
+.home h1 {
+  font-size: 3rem;
+}
+@media (max-width: 600px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+}
+.home h2 {
+  font-size: 2rem;
+}
+@media (max-width: 600px) {
+  .home h2 {
+    font-size: 1.5rem;
+  }
+}
+.home p {
+  font-size: 0.9rem;
+  color: #887b7b;
+}
+.home .image {
+  width: 200px;
+  height: 200px;
+  animation: circle 2s linear infinite;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+@media (max-width: 600px) {
+  .home .image {
+    bottom: 5%;
+  }
+}
+.home .image img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(60deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid;
+  padding: 4px 15px;
+  border-radius: 30px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1000px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+.title .home-icon, .title .about-icon, .title p {
+  font-size: 0.8rem;
+  color: #fff;
+}/*# sourceMappingURL=Home.css.map */
